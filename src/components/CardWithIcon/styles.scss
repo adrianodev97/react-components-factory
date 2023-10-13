@@ -1,0 +1,41 @@
+.card {
+  flex: 1;
+  max-width: 300px;
+  padding: 2rem;
+  background-color: #21272F;
+  border-radius: 0.5rem;
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+
+    .card-icon {
+      width: 75px;
+
+      svg {
+        polyline {
+          stroke: #00bd9580
+        }
+        polygon {
+          stroke: #00bd9580
+        }
+        line {
+          stroke: #00bd9580
+        }
+      }
+    }
+
+    .card-title {
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    .card-description {
+      color: #b9b9b9;
+      text-align: center;
+    }
+  }
+}
