@@ -8,12 +8,17 @@ const Main = styled.main`
   justify-content: center;
   align-items: center;
 `
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
 
 function App() {
   return (
-    <>
-      <Main></Main>
-    </>
+    <Main>
+      <Container></Container>
+    </Main>
   )
 }
 
