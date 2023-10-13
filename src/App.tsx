@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Main = styled.main`
-  background: #cbcbcb;
+  background: #21272f;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -12,6 +12,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 2rem;
 `
 
 function App() {
