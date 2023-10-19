@@ -1,5 +1,5 @@
 import './styles.scss'
-import {} from './styles'
+// import {} from './styles'
 
 const cardInfo = {
   title: 'Placeholder',
@@ -11,6 +11,10 @@ const cardInfo = {
   },
   href: '#',
 }
+
+// Pensei em fazer um useState que captura o card com hover e
+// solta o efeito com onblur, usando um reset time e retirando
+// o efeito de uma vez sempre que outro card for focado com hover
 
 export const ModernShowcaseCardSass = () => {
   return (
