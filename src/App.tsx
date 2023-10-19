@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { ModernShowcaseCardSass } from './components/ModernShowcaseCard'
 
 const Main = styled.main`
-  background: #21272f;
+  background: #262626;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -15,10 +16,20 @@ const Container = styled.div`
   gap: 2rem;
 `
 
+const Content = styled.div`
+  width: 100%;
+  max-width: 500px;
+  height: 850px;
+`
+
 function App() {
   return (
     <Main>
-      <Container></Container>
+      <Container>
+        <Content>
+          <ModernShowcaseCardSass />
+        </Content>
+      </Container>
     </Main>
   )
 }

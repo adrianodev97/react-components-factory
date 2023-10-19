@@ -1,0 +1,54 @@
+.showcase-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .showcase-card-link {
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+
+    .showcase-card-content {
+      position: relative;
+      flex: 1;
+      
+      &:hover {
+        .showcase-hover-content {
+          visibility: visible;
+        }
+      }
+
+      .showcase-hover-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: #000000, $alpha: .7);
+        visibility: hidden;
+
+        @keyframes SlowOut {
+          0%  {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        .showcase-title {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 28px;
+          color: #FFF;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
